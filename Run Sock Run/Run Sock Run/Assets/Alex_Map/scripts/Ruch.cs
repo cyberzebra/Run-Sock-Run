@@ -4,18 +4,41 @@ using UnityEngine;
 
 public class Ruch : MonoBehaviour
 {
-    public CharacterController controller;
+
+    public float speed = 7f;
+    /*public CharacterController controller;
     public Vector3 movement;
     public float speed = 2.5f;
-    private Vector3 direction;
+    private Vector3 direction;*/
 
-    void Start()
+    private void Update()
     {
-        
+        GetInput();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void GetInput()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.localPosition += transform.forward * speed * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.localPosition += -transform.forward * speed * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.localPosition += -transform.right * speed * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.localPosition += transform.right * speed * Time.deltaTime;
+        }
+    }
+   /* void Update()
     {
         movement.x = Input.GetAxis("Horizontal");
         movement.z = Input.GetAxis("Vertical");
@@ -61,5 +84,5 @@ public class Ruch : MonoBehaviour
     void notfire()
     {
         speed = 2.5f;
-    }
+    }*/ 
 }
