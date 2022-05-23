@@ -11,10 +11,7 @@ public class MainMenu : MonoBehaviour
        
     }
 
-    public void GoFurther ()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-    }
+  
 
     public void QuitGame()
     {
