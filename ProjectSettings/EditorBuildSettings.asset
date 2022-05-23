@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Nina_Map/Nina_Scene.unity
+    guid: 993ccf1ec7d5ffb4b84d0f6149d4ea42
+  - enabled: 1
+    path: Assets/Nina_Map/GamePretend.unity
+    guid: 5ff512e145ca21f4795a4d505764b27e
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
