@@ -25,6 +25,5 @@ public class CountdownTimer : MonoBehaviour
         {
             CurrentTime = 0;
         }
-      
     }
 }

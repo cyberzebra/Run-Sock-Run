@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45053, g: 0.49844134, b: 0.56395006, a: 1}
+  m_IndirectSpecularColor: {r: 0.45052958, g: 0.49844086, b: 0.56394947, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3102,7 +3102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   changePositionTime: 2
-  moveDistance: 1
+  moveDistance: 10
 --- !u!195 &1032597858
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5363,7 +5363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1610945763}
-  speed: 15
+  speed: 10
   gravity: -30.81
   jumpHeight: 3
   anima: {fileID: 1610945760}

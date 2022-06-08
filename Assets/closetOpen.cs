@@ -27,9 +27,11 @@ public class closetOpen : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Canvas.enabled = true;
-            if (Input.GetMouseButtonDown(KeyCode.E))
+            //if (Input.GetMouseButtonDown(KeyCode.E))
+            if(Input.GetButtonDown("E"))
             {
-                animator.SetBool("Click", true);
+                GetComponent<Animator>().Play(" ");
+                //animator.SetBool("Click", true);
             }
         }
         animator.SetBool("isOpen", true);

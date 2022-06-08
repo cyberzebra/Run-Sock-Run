@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Nina_Map/1.unity
     guid: 2d39440b401f54041a1ff6c010cb79ab
   - enabled: 1
+    path: Assets/Scenes/cz (apartment_creaking_opendoors).unity
+    guid: d8100b65b82e94840ab2dde64f8a9dec
+  - enabled: 1
     path: Assets/Scenes/Alex.unity
     guid: 6ba5c4b22d2a869499e723cf75e362c8
   - enabled: 1

@@ -35,6 +35,7 @@ public class Rcuh_2 : MonoBehaviour
         {
             velocity.y = -2f;
         }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -43,32 +44,43 @@ public class Rcuh_2 : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        //controller.Move(move * speed * Time.deltaTime);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            move.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        velocity.y += gravity * Time.deltaTime;
+        move.y += gravity * Time.deltaTime;
 
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move(move * Time.deltaTime);
 
         if (Input.GetButtonDown("w"))
         {
             GetComponent<Animator>().Play("run");
-      
         }
 
         if (Input.GetButtonUp("w"))
         {
             GetComponent<Animator>().Play("idl");
-           
         }
 
         if (Input.GetButtonDown("space"))
         {
             GetComponent<Animator>().Play("jump");
+        }
+
+
+        if (Input.GetButtonDown("s"))
+        {
+            GetComponent<Animator>().Play("run_2");
+
+        }
+
+        if (Input.GetButtonUp("s"))
+        {
+            GetComponent<Animator>().Play("idl");
+
         }
     }
 }

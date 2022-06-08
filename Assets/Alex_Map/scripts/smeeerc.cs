@@ -9,7 +9,7 @@ public class smeeerc : MonoBehaviour
     {
         if (enter.CompareTag("Player"))
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("Przegrana");
         }
     }
 }
